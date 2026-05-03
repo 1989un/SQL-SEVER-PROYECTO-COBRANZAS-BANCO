@@ -47,6 +47,7 @@ SELECT CLIENTE AS MISSINGVALUES
 FROM TB_COBRANZAS
 WHERE CLIENTE IS NULL
 
+```
 
 
 A continuación, es vital asegurarse de que se eliminen las filas duplicadas, en caso de encontrarse, nuevamente en los campos clave. No se encontraron duplicados.
@@ -63,4 +64,5 @@ FROM TB_COBRANZAS
 ) T
 WHERE CUENTA > 1
 
+```
 
