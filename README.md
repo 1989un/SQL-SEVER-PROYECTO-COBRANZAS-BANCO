@@ -8,4 +8,15 @@
         <td><h2>Resumen (Overview)</h2></td>
         <td colspan="2" ><p><i>El área de cobranzas de la empresa busca mejorar la recuperación de deuda, optimizar la gestión de contactos y reducir los niveles de morosidad. Sin embargo, actualmente no cuenta con una visión clara del comportamiento de pago de los clientes ni de la efectividad de sus estrategias de cobranza.</i></p><p><i>El objetivo de este proyecto es analizar la información disponible mediante herramientas como SQL Server Management Studio, con el fin de identificar patrones de morosidad, evaluar la eficiencia de las gestiones de cobranza y proponer recomendaciones que permitan mejorar la toma de decisiones y maximizar la recuperación de deuda</i></p>
     </tr>
-    </table>
+</table>
+
+
+## Estructura del Proyecto
+
+<table border="1">
+<tr>
+<td>- [Sobre los Datos](#sobre-los-datos)</td>
+<td>- [Tareas](#tareas)</td>
+<td>- [Limpieza de Datos](#limpieza-de-datos)</td>
+<td>- [Análisis Exploratorio de Datos e Insights](#análisis-exploratorio-de-datos-e-insights)</td>
+</tr>
