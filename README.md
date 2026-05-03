@@ -1,6 +1,6 @@
 ![HR Analytics](/picture/banner.png)
 ##
-# Proyecto SQL: Análisis Integral de Cobranzas: Evaluación de Morosidad y Eficiencia Operativa
+# Proyecto SQL: Análisis Integral de Cobranzas en Evaluación de Morosidad y Eficiencia Operativa
 
 
 <table>
