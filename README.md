@@ -32,3 +32,35 @@ En este análisis, apoyo al departamento de Cobranzas a responder lo siguiente:
 
 1. **Antigüedad:** ¿Cuál es el promedio de antigüedad de los empleados en cada departamento?
 
+## Limpieza de Datos
+
+Antes de realizar el análisis, es fundamental asegurar que los datos estén limpios y listos.
+
+#### Valores Nulos o Faltantes
+
+Primero, se revisó la existencia de valores faltantes en los dos campos clave: `CLIENTE`. No se encontraron valores nulos.
+
+```sql
+-- Verificar valores faltantes en la tabla CLIENTE --
+
+SELECT CLIENTE AS MISSINGVALUES
+FROM TB_COBRANZAS
+WHERE CLIENTE IS NULL
+
+
+
+A continuación, es vital asegurarse de que se eliminen las filas duplicadas, en caso de encontrarse, nuevamente en los campos clave. No se encontraron duplicados.
+
+```sql
+-- Verificar valores duplicados en la tabla CLIENTE --
+
+SELECT *
+FROM
+(
+SELECT CLIENTE,
+      COUNT(1)  OVER (PARTITION BY CLIENTE) AS CUENTA
+FROM TB_COBRANZAS
+) T
+WHERE CUENTA > 1
+
+
