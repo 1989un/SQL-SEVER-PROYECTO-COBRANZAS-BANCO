@@ -13,7 +13,7 @@
 
 ## Estructura del Proyecto
 
-<table border="1" width="100%" style="border-radius:15px">
+<table border="1" width="100%">
 <tr><td>■ <a href="#sobre-los-datos">Sobre los Datos</a></td></tr>
 <tr><td>■ <a href="#Tareas">Tareas</a></td></tr>
 <tr><td>■ <a href="#limpieza-de-datos">Limpieza de Datos</a></td></tr>
