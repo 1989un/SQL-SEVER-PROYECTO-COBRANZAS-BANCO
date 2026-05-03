@@ -17,5 +17,5 @@
 <tr><td>■ <a href="#sobre-los-datos">Sobre los Datos</a></td></tr>
 <tr><td>■ <a href="#Tareas">Tareas</a></td></tr>
 <tr><td>■ <a href="#limpieza-de-datos">Limpieza de Datos</a></td></tr>
-<tr><td>■ <a href="#análisis-exploratorio-de-datos-e-insights">Análisis Exploratorio de Datos e Insights</a></td></tr>
+<tr><td>■ <a href="#análisis-exploratorio-de-datos-e-insights">Análisis Exploratorio de Datos e Insights.</a></td></tr>
 
