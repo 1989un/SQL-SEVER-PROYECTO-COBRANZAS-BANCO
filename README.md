@@ -85,7 +85,7 @@ FROM TB_COBRANZAS
 GROUP BY mora;	
 ```
 
-![image](./picture/P1.png)
+![image](./picture/p1.png)
 
 
 Los resultados muestran que el 76.14% de los clientes se encuentran en situación de mora, mientras que el 23.86% se mantiene al día en sus pagos. Esto indica una alta concentración de clientes morosos dentro de la cartera, lo que representa un riesgo significativo para la recuperación de deuda.
