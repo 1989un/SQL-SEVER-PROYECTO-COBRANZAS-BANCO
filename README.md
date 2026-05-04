@@ -38,7 +38,7 @@ Antes de realizar el análisis, es fundamental asegurar que los datos estén lim
 
 #### Valores Nulos o Faltantes
 
-Primero, se revisó la existencia de valores faltantes en los dos campos clave: `CLIENTE`. No se encontraron valores nulos.
+Se realizó una validación de valores nulos en el campo clave CLIENTE, dado su impacto en la integridad del análisis. Tras la revisión, no se detectaron registros con valores faltantes.
 
 ```sql
 -- Verificar valores faltantes en la tabla CLIENTE --
@@ -50,7 +50,7 @@ WHERE CLIENTE IS NULL
 ```
 
 
-A continuación, es vital asegurarse de que se eliminen las filas duplicadas, en caso de encontrarse, nuevamente en los campos clave. No se encontraron duplicados.
+Posteriormente, se llevó a cabo un análisis para detectar registros duplicados considerando los campos clave del dataset. Esta validación es fundamental para asegurar la calidad de los datos. Tras la revisión, no se encontraron duplicados.
 
 ```sql
 -- Verificar valores duplicados en la tabla CLIENTE --
@@ -66,3 +66,26 @@ WHERE CUENTA > 1
 
 ```
 
+## Análisis Exploratorio de Datos (EDA) e Insights
+
+### Pregunta #1: ¿Cuál es el nivel de morosidad de la cartera y cómo se distribuye entre los clientes?
+
+Para analizar el nivel de morosidad de la cartera, se utilizó una consulta que agrupa a los clientes según su estado de mora (mora) y calcula tanto la cantidad de registros como su porcentaje respecto al total. Para ello, se emplearon las funciones COUNT, GROUP BY y una función de ventana OVER() para obtener el total general.
+
+El resultado del porcentaje fue limitado  a dos decimales para mejorar la claridad y legibilidad de la información. Asimismo, se añadió el símbolo de porcentaje (%) para facilitar su interpretación por parte del usuario final.
+
+```sql
+-- Nivel de morosidad de la cartera y distribución entre los clientes --
+
+
+SELECT mora, 
+	 COUNT(*) AS cantidad,
+	 CONCAT(CAST(100.0 * COUNT(*) / SUM(COUNT(*)) OVER() AS DECIMAL(10,2)),'%') as porcentaje
+FROM TB_COBRANZAS
+GROUP BY mora;	
+```
+
+![image](./picture/P1.png)
+
+
+Los resultados muestran que el 76.14% de los clientes se encuentran en situación de mora, mientras que el 23.86% se mantiene al día en sus pagos. Esto indica una alta concentración de clientes morosos dentro de la cartera, lo que representa un riesgo significativo para la recuperación de deuda.
