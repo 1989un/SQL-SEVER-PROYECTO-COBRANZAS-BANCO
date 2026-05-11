@@ -94,7 +94,10 @@ GROUP BY mora;
 
 Los resultados muestran que el 76.14% de los clientes se encuentran en situación de mora, mientras que el 23.86% se mantiene al día en sus pagos. Esto indica una alta concentración de clientes morosos dentro de la cartera, lo que representa un riesgo significativo para la recuperación de deuda.
 
-
+<b>Se recomienda:</b>
+- Priorizar la gestión de clientes morosos mediante estrategias de cobranza segmentadas según nivel de deuda y riesgo de incumplimiento.
+- Implementar acciones preventivas y recordatorios de pago antes del vencimiento de las cuotas para reducir el crecimiento de la cartera morosa.
+- Realizar seguimiento continuo a los clientes con mayor antigüedad de mora para evitar que la deuda se vuelva de difícil recuperación.
 
 ### Pregunta #2: ¿Qué porcentaje de clientes morosos presenta deudas superiores al promedio general de la cartera?
 
@@ -182,7 +185,7 @@ Asimismo, el indicador sugiere la necesidad de fortalecer las estrategias de cob
 ### Pregunta #4: ¿Qué tan efectivas son las gestiones de cobranza según el número de contactos realizados?
 
 
-Para evaluar la eficiencia operativa del proceso de cobranza, se analizó la relación entre la cantidad de contactos realizados a los clientes y el nivel de morosidad registrado.
+Para evaluar la eficiencia operativa del proceso de cobranza, se analizó la relación entre la cantidad de contactos realizados a los clientes y el nivel de morosidad registrado, se utilizó COUNT, SUM, ROUND Y AVG.
 
 El objetivo es determinar si un mayor número de gestiones de cobranza contribuye efectivamente a reducir el incumplimiento de pagos o si, por el contrario, existe una sobre gestión operativa en determinados segmentos de clientes.
 
@@ -226,7 +229,8 @@ Además, el grupo con mayor cantidad de gestiones presenta una deuda promedio me
 
 ### Pregunta #5: ¿Cómo varía la morosidad según la cantidad de cuotas del cliente?
 
-La consulta evalúa la relación entre el número de cuotas asociadas al cliente (NRO_CUOTAS) y el nivel de morosidad registrado.
+
+Para obtener la variación de morosidad según la cantidad de clientes, se utilizaron las funciones COUNT, AVG Y ROUND.
 
 Para ello:
 
