@@ -465,3 +465,12 @@ En términos operativos, el predominio de contactos no efectivos evidencia una b
 - Evaluar los horarios y días en los que se realizan las llamadas, identificando los momentos con mayor probabilidad de contacto efectivo.
 - Monitorear indicadores de efectividad de cobranza, como porcentaje de contactos efectivos y tasa de recuperación, para medir el desempeño del área.
 - Capacitar a los gestores de cobranza en técnicas de comunicación y negociación para mejorar la efectividad de las interacciones con los cliente
+
+<b>Conclusiones</b>
+
+- Los clientes con deudas superiores al promedio representan un segmento de alto riesgo, por lo que requieren seguimiento prioritario y estrategias de recuperación más especializadas.
+- El incremento en la cantidad de contactos de cobranza no garantiza una reducción de la morosidad, debido a que muchos clientes continúan incumpliendo sus pagos incluso después de múltiples gestiones realizadas.
+- Los clientes con mayor número de cuotas presentan niveles más altos de morosidad, lo que sugiere que los financiamientos de largo plazo incrementan el riesgo de incumplimiento.
+- Se detectaron clientes con promesas de pago incumplidas y múltiples contactos de cobranza, evidenciando posibles casos de reincidencia y baja efectividad en algunas estrategias operativas.
+- La mayor parte de las gestiones realizadas corresponde a contactos no efectivos (CNE), lo que indica dificultades para establecer comunicación con los clientes y oportunidades de mejora en la calidad de los datos y canales de contacto.
+- Finalmente, el análisis permitió identificar oportunidades para optimizar recursos operativos mediante segmentación de clientes, priorización por nivel de riesgo y fortalecimiento de estrategias preventivas de cobranza.
